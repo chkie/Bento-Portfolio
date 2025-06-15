@@ -36,3 +36,7 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+## Layout
+
+The Tailwind configuration defines a custom `dashboard` grid template with six equal-height rows. It is applied from the `lg` breakpoint upward so every `row-span-*` class occupies predictable space. Scrolling is disabled for `lg` and larger screens to keep the dashboard fixed, while mobile layouts remain scrollable.

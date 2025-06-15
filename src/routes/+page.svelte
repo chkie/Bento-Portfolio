@@ -12,7 +12,7 @@
 </script>
 
 <div
-	class="grid-rows-auto mx-auto grid max-w-screen-xl grid-cols-1 gap-4 p-4 sm:grid-cols-2 xl:min-h-screen xl:grid-cols-12 xl:overflow-hidden"
+        class="mx-auto grid max-w-screen-xl grid-cols-1 gap-4 p-4 sm:grid-cols-2 lg:auto-rows-fr lg:grid-rows-dashboard lg:overflow-hidden xl:min-h-screen xl:grid-cols-12"
 >
 	<!-- Vorstellung -->
 	<SectionWrapper className="xl:col-span-3 xl:row-span-full">
