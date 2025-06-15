@@ -40,7 +40,7 @@
 					class="w-4 rounded bg-neutral-800"
 					style="height: {value * 15}px"
 					title="{value} Commits"
-				/>
+				></div>
 			{/each}
 		</div>
 	{:else}
