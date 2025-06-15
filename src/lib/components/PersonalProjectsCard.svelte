@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
+        import { goto } from '$app/navigation';
+        import Button from './ui/Button.svelte';
 </script>
 
 <div class="flex h-full flex-col justify-between text-sm">
@@ -10,10 +11,5 @@
 			habe.
 		</p>
 	</div>
-	<button
-		class="mt-6 rounded-lg bg-black px-4 py-2 text-white transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-blue-300"
-		on:click={() => goto('/personal-projects')}
-	>
-		Tools entdecken →
-	</button>
+       <Button on:click={() => goto('/personal-projects')}>Tools entdecken →</Button>
 </div>
