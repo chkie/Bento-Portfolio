@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: "Frontend-Regeln: TS, Tailwind, semantisches HTML"
+globs:
+  - "**/*.svelte"
+  - "**/*.ts"
+alwaysApply: true
+---
+
+# Frontend-Code Prinzipien
+
+- Verwende **TypeScript**, keine `.js`.
+- Nutze **Tailwind CSS** für Styles, vermeide klassische CSS/SCSS.
+- Halte dich an **SvelteKit-Konventionen**: `+page`, `+layout`, `load`, Actions.
+- Komponenten sollen modular, wiederverwendbar und semantisch sein.
+- **Fehlerbehandlung** immer einbauen (z. B. bei fetch/API).
+- **Semantisches HTML** bevorzugen.
+- **Keine Inline-Styles** verwenden.
+- **Sprechende Namen** für Variablen und Funktionen.
+- Schreiben von **Unit-Tests** für Utility-Funktionen.

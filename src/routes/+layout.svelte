@@ -1,9 +1,7 @@
 <script lang="ts">
 	import '../app.css';
-	let { children } = $props();
 </script>
 
-<!-- Wrapper notwendig, sonst sieht man keinen body -->
-<div class="min-h-screen">
-	{@render children()}
-</div>
+<main class="min-h-screen overflow-y-auto bg-neutral-50 lg:h-screen lg:overflow-hidden">
+	<slot />
+</main>

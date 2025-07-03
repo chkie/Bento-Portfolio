@@ -1,31 +1,16 @@
 @import 'tailwindcss';
 
-html,
-/* Apple-inspirierter Hintergrund */
-body {
-	background-image: url('https://images.unsplash.com/photo-1620722074244-7e9cf01c681b?auto=format&fit=crop&w=1920&q=80');
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+/* Globale Resets & Defaults */
+@layer base {
+	html,
+	body {
+		@apply box-border min-h-screen;
+	}
 }
 
-/* Liquid Glass Kachel-Design */
-.glass {
-	@apply relative isolate rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl;
-}
-
-.glass::after {
-	content: '';
-	position: absolute;
-	inset: 0;
-	border-radius: 1rem;
-	background: rgba(255, 255, 255, 0.08);
-	box-shadow:
-		inset -10px -8px 0 -11px rgba(255, 255, 255, 0.4),
-		inset 0 -9px 0 -8px rgba(255, 255, 255, 0.3);
-	opacity: 0.8;
-	filter: brightness(1.1);
-	z-index: -1;
-	pointer-events: none;
+/* Wiederverwendbare Komponenten-Styles */
+@layer components {
+	.card {
+		@apply flex flex-col overflow-hidden rounded-xl bg-neutral-100 shadow-md;
+	}
 }

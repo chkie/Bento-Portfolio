@@ -1,33 +1,11 @@
-<script lang="ts">
-	const links = [
-		{
-			name: 'GitHub',
-			url: 'https://github.com/chkie',
-			icon: '🐙'
-		},
-		{
-			name: 'LinkedIn',
-			url: 'https://www.linkedin.com/in/dein-profil',
-			icon: '🔗'
-		}
-	];
-</script>
+<div
+	class="card relative col-span-1 flex min-h-[8rem] flex-col items-center
+	justify-center gap-3 p-4 sm:min-h-[10rem] lg:row-span-1 lg:min-h-[6rem]"
+>
+	<h2 class="text-sm font-medium text-gray-700 sm:text-base">Social</h2>
 
-<div class="flex h-full flex-col justify-between text-sm">
-	<p class="text-neutral-500">Folge mir auf</p>
-	<ul class="mt-2 space-y-2">
-		{#each links as link}
-			<li>
-				<a
-					href={link.url}
-					class="flex items-center gap-2 text-neutral-700 hover:underline"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<span>{link.icon}</span>
-					{link.name}
-				</a>
-			</li>
-		{/each}
-	</ul>
+	<div class="flex gap-4">
+		<img src="/icons/github.svg" alt="GitHub" class="h-5 w-5 sm:h-6 sm:w-6" />
+		<img src="/icons/linkedin.svg" alt="LinkedIn" class="h-5 w-5 sm:h-6 sm:w-6" />
+	</div>
 </div>
